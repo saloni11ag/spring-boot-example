@@ -41,22 +41,5 @@ public class HystrixAppApplication {
     @Autowired
     RestTemplate restTemplate;
 
-    //    @GetMapping("/get")
-//    @HystrixCommand(fallbackMethod = "fallback_getItems", commandProperties = {
-//            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "100000")
-//    })
-//    public String getItems() throws InterruptedException {
-////        Thread.sleep(3000);
-//        HttpHeaders headers = new HttpHeaders();
-//        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-//        HttpEntity <String> entity = new HttpEntity<String>(headers);
-//
-//        return restTemplate.exchange("http://localhost:8080/getAll", HttpMethod.GET, entity, String.class).getBody();
-//    }
-
-
-//    private String fallback_getItems() {
-//        return "Request fails. It takes long time to response";
-//    }
 
 }
